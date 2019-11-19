@@ -1,0 +1,8 @@
+.home {
+  background-color: yellow; }
+
+.h1 {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 2px; }
