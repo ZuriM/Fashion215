@@ -9,15 +9,15 @@
     background-repeat: no-repeat;
     background-color: black;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-position: 50%;
   }
 
   p {
     font-size: 20px;
-    color: white;
+    color: red;
     display: flex;
-    justify-content: right;
     width: 40%;
-    align-items: center;
   }
 }

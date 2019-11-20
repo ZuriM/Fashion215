@@ -1,0 +1,77 @@
+.upcomingsection {
+  background-color: black;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  .upcomingtitle {
+    color: white;
+    font-size: 30px;
+    margin-right: 60px;
+    //background-color: teal;
+  }
+
+  .one {
+    background-image: linear-gradient(
+        to right,
+        rgba(black, 0.4),
+        rgba(black, 0.4)
+      ),
+      url("../image/runwayone.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    //background-color: red;
+  }
+  .two {
+    background-image: linear-gradient(
+        to right,
+        rgba(black, 0.4),
+        rgba(black, 0.4)
+      ),
+      url("../image/runwaytwo.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .upcoming {
+    height: 300px;
+    width: 235px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: red;
+
+    .upcomingtext {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    h1,
+    p {
+      font-family: "Roboto", sans-serif;
+      color: white;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+  }
+}
+
+.upcomingBox {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  //background-color: pink;
+}

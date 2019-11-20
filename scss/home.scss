@@ -1,5 +1,5 @@
 .home {
-  background-color: white;
+  background-color: black;
   height: 8%;
 
   .links {
@@ -8,7 +8,7 @@
     justify-content: flex-end;
 
     .h1 {
-      color: black;
+      color: white;
       font-size: 30px;
       display: flex;
       justify-content: start;
@@ -23,7 +23,7 @@
       margin-left: 10px;
       margin-right: 10px;
       margin-bottom: 10px;
-      color: black;
+      color: white;
       padding-top: 10px;
     }
   }
