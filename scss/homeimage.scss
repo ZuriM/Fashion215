@@ -3,7 +3,12 @@
   height: 50%;
   background-color: black;
   .image {
-    background-image: url(../image/homeimage.gif);
+    background-image: linear-gradient(
+        to right,
+        rgba(black, 0.6),
+        rgba(black, 0.6)
+      ),
+      url(../image/homeimage.gif);
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -15,9 +20,11 @@
   }
 
   p {
-    font-size: 20px;
-    color: red;
+    font-size: 30px;
+    font: bold;
+    color: whitesmoke;
     display: flex;
-    width: 40%;
+    width: 50%;
+    flex-direction: column;
   }
 }

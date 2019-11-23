@@ -56,7 +56,10 @@ p {
   height: 50%;
   background-color: black; }
   .homeimage .image {
-    background-image: url(../image/homeimage.gif);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../image/homeimage.gif);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/homeimage.gif);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/homeimage.gif);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/homeimage.gif);
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -72,12 +75,17 @@ p {
     justify-content: center;
     background-position: 50%; }
   .homeimage p {
-    font-size: 20px;
-    color: red;
+    font-size: 30px;
+    font: bold;
+    color: whitesmoke;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 40%; }
+    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
 
 .whatshot {
   display: -webkit-box;
@@ -145,14 +153,16 @@ p {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/runwayone.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    border: 5px solid white; }
   .upcomingsection .two {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../image/runwaytwo.jpg");
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/runwaytwo.jpg");
     background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/runwaytwo.jpg");
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/runwaytwo.jpg");
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    border: 5px solid white; }
   .upcomingsection .upcoming {
     height: 300px;
     width: 235px;
@@ -164,7 +174,11 @@ p {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    /*br {
+      display: flex;
+      flex-direction: column;
+    }*/ }
     .upcomingsection .upcoming .upcomingtext {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -182,7 +196,14 @@ p {
     .upcomingsection .upcoming h1,
     .upcomingsection .upcoming p {
       font-family: "Roboto", sans-serif;
-      color: white; }
+      color: white;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
     .upcomingsection .upcoming h1 {
       font-size: 40px; }
     .upcomingsection .upcoming p {
