@@ -222,6 +222,7 @@ p {
   justify-content: space-around; }
 
 .gallery-section {
+  margin-top: 20px;
   height: 80%; }
   .gallery-section .gallery {
     -ms-flex-pack: distribute;
@@ -258,45 +259,80 @@ p {
   .gallery-section .image01 {
     width: 236px;
     height: 304px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../image/gallery01.jpg");
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../image/gallery01.jpg");
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../image/gallery01.jpg");
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../image/gallery01.jpg");
+    background-image: url("../image/gallery01.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    border: 5px solid black; }
   .gallery-section .image02 {
     width: 236px;
     height: 304px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../image/gallery02.jpg");
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../image/gallery02.jpg");
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../image/gallery02.jpg");
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../image/gallery02.jpg");
+    background-image: url("../image/gallery02.png");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    border: 5px solid black; }
   .gallery-section .image03 {
     width: 236px;
     height: 304px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../image/gallery03.jpg");
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../image/gallery03.jpg");
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../image/gallery03.jpg");
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../image/gallery03.jpg");
+    background-image: url("../image/gallery03.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    border: 5px solid black; }
   .gallery-section .image04 {
     width: 236px;
     height: 304px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../image/gallery04.jpg");
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../image/gallery04.jpg");
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../image/gallery04.jpg");
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../image/gallery04.jpg");
+    background-image: url("../image/gallery04.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    border: 5px solid black; }
+
+.image-text1 {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 48%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.image-text2 {
+  display: none;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  -webkit-transform: translate(-35%, -50%);
+  -ms-transform: translate(-35%, -50%);
+  transform: translate(-35%, -50%);
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.overlay:hover .image-text1 {
+  display: block;
+  color: white; }
+
+.pictures:hover .image-text2 {
+  display: block;
+  color: white; }
+
+.pictures:hover > .overlay {
+  -webkit-filter: brightness(70%);
+  color: white; }
 
 .about-title {
+  padding-top: 20px;
   background-color: black;
   color: white;
   display: -webkit-box;
@@ -325,7 +361,8 @@ p {
   padding-bottom: 50px; }
 
 .person-info h2 {
-  margin-left: 30%; }
+  margin-left: 30%;
+  font-family: 'Roboto', sans-serif; }
 
 .person-info p {
   text-align: justify;

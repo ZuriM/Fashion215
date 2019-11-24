@@ -1,4 +1,5 @@
 .gallery-section {
+  margin-top: 20px;
   height: 80%;
 
   .gallery {
@@ -30,44 +31,81 @@
   .image01 {
     width: 236px;
     height: 304px;
-    background-image: linear-gradient(to right, rgba(black, 0), rgba(black, 0)),
-      url('../image/gallery01.jpg');
+    background-image: url('../image/gallery01.jpg');
 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: 5px solid black;
   }
 
   .image02 {
     width: 236px;
     height: 304px;
-    background-image: linear-gradient(to right, rgba(black, 0), rgba(black, 0)),
-      url('../image/gallery02.jpg');
+    background-image: url('../image/gallery02.png');
 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: 5px solid black;
   }
 
   .image03 {
     width: 236px;
     height: 304px;
-    background-image: linear-gradient(to right, rgba(black, 0), rgba(black, 0)),
-      url('../image/gallery03.jpg');
+    background-image: url('../image/gallery03.jpg');
 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: 5px solid black;
   }
 
   .image04 {
     width: 236px;
     height: 304px;
-    background-image: linear-gradient(to right, rgba(black, 0), rgba(black, 0)),
-      url('../image/gallery04.jpg');
+    background-image: url('../image/gallery04.jpg');
 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: 5px solid black;
   }
+}
+
+.image-text1 {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+}
+
+.image-text2 {
+  display: none;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-35%, -50%);
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+}
+
+.overlay:hover .image-text1 {
+  display: block;
+  color: white;
+}
+
+.pictures:hover .image-text2 {
+  display: block;
+  color: white;
+}
+
+.pictures:hover > .overlay {
+  -webkit-filter: brightness(70%);
+  color: white;
 }
