@@ -1,6 +1,14 @@
 .home {
   background-color: black;
-  height: 8%; }
+  height: 8%;
+  width: 100%;
+  top: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  z-index: 99;
+  position: fixed;
+  overflow: hidden; }
   .home .links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -22,6 +30,17 @@
       justify-content: start;
       padding-right: 50%;
       padding-top: 20px; }
+    .home .links .logo {
+      color: white;
+      font-size: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: start;
+      padding-right: 50%;
+      padding-top: 20px; }
     .home .links a {
       font-size: 15px;
       text-decoration: none;
@@ -30,6 +49,9 @@
       margin-bottom: 10px;
       color: white;
       padding-top: 10px; }
+    .home .links a:hover {
+      background-color: white;
+      color: black; }
 
 * {
   margin: 0;
@@ -56,10 +78,13 @@ p {
   height: 50%;
   background-color: black; }
   .homeimage .image {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../image/homeimage.gif);
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/homeimage.gif);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/homeimage.gif);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/homeimage.gif);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../image/homeimage2..gif);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/homeimage2..gif);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/homeimage2..gif);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/homeimage2..gif);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background-size: 100% 100%;
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -73,7 +98,8 @@ p {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-position: 50%; }
+    background-position: 50%;
+    margin-top: 50px; }
   .homeimage p {
     font-size: 30px;
     font: bold;

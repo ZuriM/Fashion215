@@ -1,6 +1,12 @@
 .home {
   background-color: black;
   height: 8%;
+  width: 100%;
+  top: 0;
+  transition: 1s;
+  z-index: 99;
+  position: fixed;
+  overflow: hidden;
 
   .links {
     display: flex;
@@ -8,6 +14,15 @@
     justify-content: flex-end;
 
     .h1 {
+      color: white;
+      font-size: 30px;
+      display: flex;
+      justify-content: start;
+      //margin-bottom: 0px;
+      padding-right: 50%;
+      padding-top: 20px;
+    }
+    .logo {
       color: white;
       font-size: 30px;
       display: flex;
@@ -25,6 +40,10 @@
       margin-bottom: 10px;
       color: white;
       padding-top: 10px;
+    }
+    a:hover {
+      background-color: white;
+      color: black;
     }
   }
 }
