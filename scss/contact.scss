@@ -1,17 +1,16 @@
 .contact-form {
   margin-top: 20px;
-  width: 100%;
 
   .contact {
+    justify-content: space-around;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
 
   h1 {
     font-size: 40px;
-    margin-right: 80%;
   }
 
   .input-info {
