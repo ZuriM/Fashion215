@@ -376,7 +376,8 @@ p {
   flex-direction: column; }
   .about-title h1 {
     font-size: 40px;
-    margin-right: 80%; }
+    margin-right: 80%;
+    padding-bottom: 30px; }
 
 .about-info img {
   float: left;
@@ -384,7 +385,8 @@ p {
   width: 25%;
   margin-left: 3%;
   margin-bottom: 20px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-left: 50px; }
 
 .person-info h2 {
   margin-left: 30%;
@@ -434,6 +436,13 @@ p {
     justify-content: center;
     flex-direction: column;
     margin: 0 auto; }
+    .contact-form .input-info .text {
+      width: 89%;
+      margin-bottom: -15px;
+      margin-top: 10px;
+      font-family: 'Roboto', sans-serif; }
+      .contact-form .input-info .text h2 {
+        font-size: 18px; }
     .contact-form .input-info .name {
       margin-top: 10px;
       margin-bottom: 10px; }
@@ -466,7 +475,7 @@ p {
   padding-bottom: 100px; }
 
 .send {
-  width: 40%;
+  width: 30%;
   background-color: black;
   text-decoration: none;
   color: white;
@@ -480,7 +489,7 @@ p {
   -ms-flex-align: center;
   align-items: center;
   margin: 0 auto;
-  padding-left: 19%;
+  padding-left: 11%;
   font-family: 'Lato', sans-serif; }
 
 .footer-container {
